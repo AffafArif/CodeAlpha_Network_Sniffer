@@ -23,6 +23,6 @@ def packet_handler(packet):
             print(f"ICMP Type: {icmpType}, ICMP Code: {icmpCode}")
 
 # Replace 'abc' with the appropriate network interface
-interface = 'Intel(R) Dual Band Wireless-AC 8265'
+interface = 'abc'
 
 scapy.sniff(iface=interface, store=False, prn=packet_handler,count=10)
